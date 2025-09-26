@@ -7,7 +7,7 @@ import PlatformChart from './components/PlatformChart';
 import AlertsPanel from './components/AlertsPanel';
 import QuickActions from './components/QuickActions';
 import DeliveryHotspots from './components/DeliveryHotspots';
-import UserManagement from './components/UserManagement';
+import UsersList from './components/users/UsersList';
 import OrderManagement from './components/OrderManagement';
 import VendorManagement from './components/VendorManagement';
 import DeliveryPartnerManagement from './components/DeliveryPartnerManagement';
@@ -63,7 +63,13 @@ function App() {
   const renderContent = () => {
     switch (activeItem) {
       case 'users':
-        return <UserManagement />;
+        return (
+          <main className="flex-1 overflow-y-auto bg-gray-50">
+            <div className="p-4 lg:p-6 max-w-7xl mx-auto">
+              <UsersList />
+            </div>
+          </main>
+        );
       case 'orders':
         return <OrderManagement />;
       case 'vendors':

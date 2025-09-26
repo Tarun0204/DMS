@@ -1,15 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { 
-  Search, 
-  Filter, 
-  RotateCcw, 
-  Plus, 
-  Download, 
-  Eye, 
-  Edit, 
-  Trash2,
-  RefreshCw
-} from 'lucide-react';
+import { Search, ListFilter as Filter, RotateCcw, Plus, Download, Eye, CreditCard as Edit, Trash2, RefreshCw } from 'lucide-react';
 import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import {
